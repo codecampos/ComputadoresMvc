@@ -1,5 +1,7 @@
 # 💻 Cadastro de Computadores — ASP.NET Core MVC
 
+<img width="547" height="365" alt="aspnetcoremvc" src="https://github.com/user-attachments/assets/016f97cb-91b9-48e4-8521-439f5313f819" />
+
 ![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=csharp&logoColor=white)
 ![.NET](https://img.shields.io/badge/.NET%2010-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
 ![SQL Server](https://img.shields.io/badge/SQL%20Server-CC2927?style=for-the-badge&logo=microsoftsqlserver&logoColor=white)
