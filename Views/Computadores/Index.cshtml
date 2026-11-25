@@ -1,0 +1,41 @@
+﻿@model List<Computador>
+@{
+    ViewData["Title"] = "Computadores cadastrados";
+}
+
+<h1>Computadores cadastrados</h1>
+
+@if (TempData["Sucesso"] is string mensagem)
+{
+    <p class="sucesso" role="status">@mensagem</p>
+}
+
+<p><a class="botao" asp-action="Criar">Cadastrar computador</a></p>
+
+@if (Model.Count == 0)
+{
+    <p>Nenhum computador cadastrado.</p>
+}
+else
+{
+    <div class="tabela">
+        <table>
+            <thead>
+                <tr><th>ID</th><th>Nome</th><th>Marca</th><th>Processador</th><th>RAM (GB)</th><th>Armazenamento (GB)</th></tr>
+            </thead>
+            <tbody>
+                @foreach (var computador in Model)
+                {
+                    <tr>
+                        <td>@computador.Id</td>
+                        <td>@computador.Nome</td>
+                        <td>@computador.Marca</td>
+                        <td>@computador.Processador</td>
+                        <td>@computador.MemoriaRamGb</td>
+                        <td>@computador.ArmazenamentoGb</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+}
